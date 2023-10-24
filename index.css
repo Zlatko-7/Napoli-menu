@@ -107,8 +107,8 @@ h1 {
     font-size: 1rem;
     font-weight: 700;
     position: absolute;
-    top: 275px;
-    left: 218px;
+    top: 315px;
+    left: 230px;
 }
 
 @keyframes wave-animation {
