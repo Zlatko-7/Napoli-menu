@@ -1,0 +1,76 @@
+body {
+    text-align: center;
+    background-color: #252422;
+    max-width: 480px;
+
+}
+.container {
+    padding: .6rem;
+    margin: 1.2rem auto;
+    max-width: 480px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.ingredients {
+    color: #FFFFFF;
+    margin: 0 auto;
+    padding: .6rem;
+    font-family: 'Lora', sans-serif;
+    font-weight: 500;
+    max-width: 300px;
+    overflow-x: auto;
+    font-size: .8rem;
+}
+.name {
+    font-size: 1.75rem;
+    margin: 0;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    color: #eea40f;
+}
+.price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: .35rem;
+    font-family: 'Lora', sans-serif;
+    color: white;
+}
+.navbar {
+    display: flex;
+    padding: .65rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #252422;
+    
+}
+.nav-menu {
+    padding: .65rem 1.25rem;
+    flex-grow: 1;
+    width: 100%;
+    font-family: 'Lora', sans-serif;
+    background-color:white;
+    margin: .25rem;
+    border-radius: 30px;
+    color: #eea40f;
+    border: 1px solid #eea40f;;
+}
+.nav-menu:hover {
+    color: white;
+    background-color: #eea40f;
+}
+.hide {
+    display: none;
+}
+h1 {
+    font-family:  'Playfair Display', sans-serif;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #eea40f;
+    text-shadow: 1px 1px white;
+}
