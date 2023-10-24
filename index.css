@@ -74,3 +74,40 @@ h1 {
     color: #eea40f;
     text-shadow: 1px 1px white;
 }
+.content {
+    max-width: 480px;
+    height: 100%;
+    animation: wave-animation 1s linear infinite;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content::before {
+    content: 'Napoli Lounge Bar';
+    color: #eea40f;
+    width: 100%;
+    height: 100%;
+    background-color: #252422;
+    opacity: 0.2;
+    z-index: -1;
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-shadow: 3px 3px 3px white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+@keyframes wave-animation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
