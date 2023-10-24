@@ -10,7 +10,7 @@ body {
     margin: 1.2rem auto;
     max-width: 480px;
     border-radius: 5px;
-    box-shadow: 1px 1px 3px white;
+    box-shadow: 1px 1px 3px #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,7 +39,7 @@ body {
     font-weight: 600;
     margin: .35rem;
     font-family: 'Lora', sans-serif;
-    color: white;
+    color: #FFFFFF;
 }
 .navbar {
     display: flex;
@@ -54,14 +54,13 @@ body {
     flex-grow: 1;
     width: 100%;
     font-family: 'Lora', sans-serif;
-    background-color:white;
+    background-color: #FFFFFF;
     margin: .25rem;
     border-radius: 30px;
     color: #eea40f;
-    border: 1px solid #eea40f;;
 }
 .nav-menu:hover {
-    color: white;
+    color:  #FFFFFF;
     background-color: #eea40f;
 }
 .hide {
@@ -72,7 +71,7 @@ h1 {
     font-size: 2.2rem;
     text-align: center;
     color: #eea40f;
-    text-shadow: 1px 1px 2px white;
+    text-shadow: 1px 1px 2px #FFFFFF;
 }
 .content {
     max-width: 480px;
@@ -94,7 +93,7 @@ h1 {
     z-index: -1;
     font-size: 4.5rem;
     font-weight: 700;
-    text-shadow: 3px 3px 3px white;
+    text-shadow: 3px 3px 3px #FFFFFF;
     position: absolute;
     display: flex;
     align-items: center;
@@ -102,7 +101,7 @@ h1 {
 }
 .content::after { 
     content: 'loundge bar';
-    color: #ffffff;
+    color:  #FFFFFF;
     opacity: 0.6;
     z-index: -1;
     font-size: 1rem;
