@@ -82,6 +82,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 .content::before {
     content: 'Napoli';
@@ -107,8 +108,8 @@ h1 {
     font-size: 1rem;
     font-weight: 700;
     position: absolute;
-    top: 315px;
-    left: 230px;
+    top: 344px;
+    left: 267px;
 }
 
 @keyframes wave-animation {
