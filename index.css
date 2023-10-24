@@ -100,16 +100,17 @@ h1 {
     align-items: center;
     justify-content: center;
 }
-.content::after{
+.content::after { 
     content: 'loundge bar';
     color: #ffffff;
     opacity: 0.6;
     z-index: -1;
     font-size: 1rem;
     font-weight: 700;
-    position: fixed;
-    top: 301px;
-    left: 262px;
+    position: absolute;
+    top: 56.5%;
+    left: 64%;
+    transform: translate(-50%, -50%);
 }
 
 @keyframes wave-animation {
