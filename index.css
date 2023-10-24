@@ -107,9 +107,9 @@ h1 {
     z-index: -1;
     font-size: 1rem;
     font-weight: 700;
-    position: absolute;
-    top: 344px;
-    left: 267px;
+    position: fixed;
+    top: 301px;
+    left: 262px;
 }
 
 @keyframes wave-animation {
