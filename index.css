@@ -111,6 +111,7 @@ h1 {
     top: 55%;
     left: 71.5%;
     transform: translate(-50%, -50%);
+    border-bottom: 1px solid #eea40f;
 }
 
 @keyframes wave-animation {
