@@ -2,15 +2,15 @@ body {
     text-align: center;
     background-color: #252422;
     max-width: 480px;
+    padding: .25rem;
 
 }
 .container {
     padding: .6rem;
     margin: 1.2rem auto;
     max-width: 480px;
-    border: 1px solid white;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px white;
+    box-shadow: 1px 1px 3px white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,7 +72,7 @@ h1 {
     font-size: 2.2rem;
     text-align: center;
     color: #eea40f;
-    text-shadow: 1px 1px white;
+    text-shadow: 1px 1px 2px white;
 }
 .content {
     max-width: 480px;
@@ -84,12 +84,12 @@ h1 {
     justify-content: center;
 }
 .content::before {
-    content: 'Napoli Lounge Bar';
+    content: 'Napoli';
     color: #eea40f;
     width: 100%;
     height: 100%;
     background-color: #252422;
-    opacity: 0.2;
+    opacity: 0.1;
     z-index: -1;
     font-size: 4.5rem;
     font-weight: 700;
@@ -98,8 +98,21 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
+.content::after{
+    content: 'loundge bar';
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    z-index: -1;
+    font-size: 1rem;
+    font-weight: 700;
+    position: absolute;
+    top: 17.125rem;
+    left: 4.375rem;
+}
+
 @keyframes wave-animation {
     0% {
       transform: translateY(0);
