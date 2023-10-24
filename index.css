@@ -102,15 +102,13 @@ h1 {
 .content::after{
     content: 'loundge bar';
     color: #ffffff;
-    width: 100%;
-    height: 100%;
     opacity: 0.6;
     z-index: -1;
     font-size: 1rem;
     font-weight: 700;
     position: absolute;
-    top: 17.125rem;
-    left: 4.375rem;
+    top: 275px;
+    left: 218px;
 }
 
 @keyframes wave-animation {
