@@ -107,9 +107,9 @@ h1 {
     z-index: -1;
     font-size: 1rem;
     font-weight: 700;
-    position: absolute;
-    top: 56.5%;
-    left: 64%;
+    position: fixed;
+    top: 54.3%;
+    left: 68%;
     transform: translate(-50%, -50%);
 }
 
