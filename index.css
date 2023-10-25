@@ -19,25 +19,31 @@ body {
     align-items: center;
     
 }
+h1 {
+    font-family: 'Quicksand',sans-serif;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #cb8f32;
+    margin: 2rem 0 1rem 0;
+    
+}
 .name {
     font-size: 1.75rem;
-    font-family: 'Playfair Display', sans-serif;
-    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
     color: #cb8f32;
     margin: .5rem;
 }
 .price {
     font-size: 1.5rem;
-    font-weight: 600;
-    font-family: 'Lora', sans-serif;
+    font-weight: 700;
+    font-family: 'Bubblegum Sans', sans-serif;
     color:  #cb8f32;
     margin: 0;
 }
 .ingredients {
     color: #726c6c;
     padding: .6rem;
-    font-family: 'Lora', sans-serif;
-    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
     max-width: 300px;
     overflow-x: auto;
     font-size: .8rem;
@@ -55,9 +61,9 @@ body {
     padding: .65rem 1.25rem;
     flex-grow: 1;
     width: 100%;
-    font-family: 'Lora', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     background-color: #303030;
-    margin: .25rem;
+    margin: 0 .25rem;
     border-radius: 30px;
     color:  #cb8f32;
 }
@@ -67,12 +73,6 @@ body {
 }
 .hide {
     display: none;
-}
-h1 {
-    font-family:  'Playfair Display', sans-serif;
-    font-size: 2.2rem;
-    text-align: center;
-    color: #cb8f32;
 }
 .content {
     animation: wave-animation 1s linear infinite;
@@ -163,7 +163,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Lora', sans-serif;
+    font-family: 'Bubblegum Sans', sans-serif;
     background-color: #252422;
     border-top: 1px solid #363431;
     border-bottom: 1px solid #363431;
