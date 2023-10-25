@@ -12,7 +12,7 @@ body {
     margin: 1.25rem .5rem;
     max-width: 480px;
     border-radius: 5px;
-    box-shadow: 1px 1px 3px #FFFFFF;
+    box-shadow: 1px 1px 3px  #cb8f32;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,18 +23,18 @@ body {
     font-size: 1.75rem;
     font-family: 'Playfair Display', sans-serif;
     font-weight: 700;
-    color: #eea40f;
+    color: #cb8f32;
     margin: .5rem;
 }
 .price {
     font-size: 1.5rem;
     font-weight: 600;
     font-family: 'Lora', sans-serif;
-    color: #FFFFFF;
+    color:  #cb8f32;
     margin: 0;
 }
 .ingredients {
-    color: #FFFFFF;
+    color: #726c6c;
     padding: .6rem;
     font-family: 'Lora', sans-serif;
     font-weight: 500;
@@ -56,15 +56,14 @@ body {
     flex-grow: 1;
     width: 100%;
     font-family: 'Lora', sans-serif;
-    /* background-color: #363431; */
     background-color: #303030;
     margin: .25rem;
     border-radius: 30px;
-    color: #eea40f;
+    color:  #cb8f32;
 }
 .nav-menu:hover {
-    color: #FFFFFF;
-    background-color: #eea40f;
+    color: #252422;
+    background-color:  #cb8f32;
 }
 .hide {
     display: none;
@@ -73,7 +72,7 @@ h1 {
     font-family:  'Playfair Display', sans-serif;
     font-size: 2.2rem;
     text-align: center;
-    color: #eea40f;
+    color: #cb8f32;
 }
 .content {
     animation: wave-animation 1s linear infinite;
@@ -159,7 +158,7 @@ footer {
     height: 50px;
     margin: 0;
     padding: 0;
-    color: #FFFFFF;
+    color:  #cb8f32;
     font-size: .75rem;
     display: flex;
     justify-content: center;
