@@ -11,7 +11,7 @@ export const data = [
                 name: 'Capricioza',
                 price: '250 den',
                 ingredients: ['kaskaval', 'testo', 'shunka', 'precurki', 'kecap'],
-                image: 'images/pizza.png'
+                image: 'images/pizza2.png'
             },
             {
                 name: 'Vegetariana',
@@ -23,7 +23,7 @@ export const data = [
                 name: 'Quattro Stagioni',
                 price: '270 den',
                 ingredients: ['kaskaval', 'testo', 'peperoni', 'shunka', 'piperki', 'pomodori'],
-                image: 'images/pizza.png'
+                image: 'images/pizza2.png'
             },
             {
                 name: 'Quattro Formaggi',
