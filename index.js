@@ -22,10 +22,7 @@ const hideAll = () => {
 
 content ? hideAll() : render()
 
-const renderItems = (items, container, type, img ) => {
-    console.log(items)
-    console.log(container)
-    console.log(type)
+const renderItems = (items, container, type) => {
     return items.map((item, index) => {
         const ingredientsSpace = item.ingredients.join(', ')
         return `<div class='container ${type}'>
