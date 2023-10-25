@@ -3,11 +3,13 @@ body {
     background-color: #252422;
     max-width: 480px;
     padding: .25rem;
+    margin: 0;
+    padding: 0;
 
 }
 .container {
-    padding: .6rem;
-    margin: 1.2rem auto;
+    padding: 0 .75rem;
+    margin: 1.25rem .5rem;
     max-width: 480px;
     border-radius: 5px;
     box-shadow: 1px 1px 3px #FFFFFF;
@@ -151,4 +153,18 @@ h1 {
     height: 100%;
     border-radius: 5px;
     margin: .75rem
+}
+footer {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    font-size: .75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lora', sans-serif;
+    background-color: #252422;
+    border-top: 1px solid #363431;
+    border-bottom: 1px solid #363431;
 }
