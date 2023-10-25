@@ -148,7 +148,7 @@ h1 {
 
   .food-img {
     width: 100%;
-    border-radius: 7px;
-    box-shadow: 1px -1px 3px white;
+    height: 100%;
+    border-radius: 5px;
     margin: .75rem
 }
