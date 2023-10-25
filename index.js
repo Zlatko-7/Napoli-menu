@@ -26,7 +26,7 @@ const renderItems = (items, container, type) => {
     return items.map((item, index) => {
         const ingredientsSpace = item.ingredients.join(', ')
         return `<div class='container ${type}'>
-                    <img class='food-img' src='${item.image}'/>
+                    <img class='food-img' src='${item.image}' alt="food"/>
                     <p class='name'>${item.name}</p>
                     <p class='price'>${item.price}</p>
                     <p class='ingredients'>${ingredientsSpace}</p>
