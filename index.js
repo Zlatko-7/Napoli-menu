@@ -1,24 +1,30 @@
 import { data } from '/data.js'
 
-let pizza = document.getElementById('pizza')
-let burger = document.getElementById('burger')
+const pizza = document.getElementById('pizza')
+const burger = document.getElementById('burger')
+const salads = document.getElementById('salads')
+const breakfast = document.getElementById('breakfast')
+const drinks = document.getElementById('drinks')
+const alcohol = document.getElementById('alcohol')
 const pizzaNav = document.getElementById('pizza-nav')
 const burgerNav = document.getElementById('burger-nav')
 const content = document.getElementById('content')
-const food = document.getElementById('food')
-const drinks = document.getElementById('drink')
-const btnContainer = document.getElementById('btn-container')
 
-
-if(content) { 
+const hideAll = () => {
     burger.style.display = 'none'
     pizza.style.display = 'none'
-} else {
-    render()
+    salads.style.display = 'none'
+    breakfast.style.display = 'none'
+    drinks.style.display = 'none'
+    alcohol.style.display = 'none'
 }
 
+content ? hideAll() : render()
+
 const renderItems = (items, container, type ) => {
-    console.log(items, container, type)
+    console.log(items)
+    console.log(container)
+    console.log(type)
     return items.map((item, index) => {
         const ingredientsSpace = item.ingredients.join(', ')
         return `<div class='container ${type}'>
@@ -27,7 +33,6 @@ const renderItems = (items, container, type ) => {
                     <p class='ingredients'>${ingredientsSpace}</p>
                 </div>
                 `
-
     }).join('')
 }
 

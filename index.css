@@ -71,9 +71,29 @@ h1 {
     font-size: 2.2rem;
     text-align: center;
     color: #eea40f;
-    text-shadow: 1px 1px 2px #FFFFFF;
 }
 .content {
+    animation: wave-animation 1s linear infinite;
+    position: relative;
+    background-image: url('images/logo.png');
+    background-size: cover;
+    width: 200px;
+    height: 140px;
+    border: 2px solid #363431;
+    border-radius: 2px;
+    margin: 100px auto;
+}
+.content::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.93;
+    z-index: -1;
+    background-color: #252422;
+    left: -0%;
+}
+/* .content {
     max-width: 480px;
     height: 100%;
     animation: wave-animation 1s linear infinite;
@@ -81,8 +101,9 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+} */
 
-}
+/* }
 .content::before {
     content: 'Napoli';
     color: #eea40f;
@@ -111,7 +132,7 @@ h1 {
     left: 71.5%;
     transform: translate(-50%, -50%);
     border-bottom: 1px solid #eea40f;
-}
+} */
 
 @keyframes wave-animation {
     0% {
