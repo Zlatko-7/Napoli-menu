@@ -10,6 +10,7 @@ const pizzaNav = document.getElementById('pizza-nav')
 const burgerNav = document.getElementById('burger-nav')
 const content = document.getElementById('content')
 
+
 const hideAll = () => {
     burger.style.display = 'none'
     pizza.style.display = 'none'
@@ -21,13 +22,14 @@ const hideAll = () => {
 
 content ? hideAll() : render()
 
-const renderItems = (items, container, type ) => {
+const renderItems = (items, container, type, img ) => {
     console.log(items)
     console.log(container)
     console.log(type)
     return items.map((item, index) => {
         const ingredientsSpace = item.ingredients.join(', ')
         return `<div class='container ${type}'>
+                    <img class='food-img' src='${item.image}'/>
                     <p class='name'>${item.name}</p>
                     <p class='price'>${item.price}</p>
                     <p class='ingredients'>${ingredientsSpace}</p>

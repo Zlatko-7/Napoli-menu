@@ -17,29 +17,29 @@ body {
     align-items: center;
     
 }
+.name {
+    font-size: 1.75rem;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    color: #eea40f;
+    margin: .5rem;
+}
+.price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Lora', sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+}
 .ingredients {
     color: #FFFFFF;
-    margin: 0 auto;
     padding: .6rem;
     font-family: 'Lora', sans-serif;
     font-weight: 500;
     max-width: 300px;
     overflow-x: auto;
     font-size: .8rem;
-}
-.name {
-    font-size: 1.75rem;
     margin: 0;
-    font-family: 'Playfair Display', sans-serif;
-    font-weight: 700;
-    color: #eea40f;
-}
-.price {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: .35rem;
-    font-family: 'Lora', sans-serif;
-    color: #FFFFFF;
 }
 .navbar {
     display: flex;
@@ -145,3 +145,10 @@ h1 {
       transform: translateY(0);
     }
   }
+
+  .food-img {
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 1px -1px 3px white;
+    margin: .75rem
+}
