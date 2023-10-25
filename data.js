@@ -5,31 +5,31 @@ export const data = [
                 name: 'Margarita',
                 price: '210 den',
                 ingredients: ['kaskaval', 'testo', 'kecap'],
-                image: 'images/pizza.jpg'
+                image: 'images/pizza.png'
             },
             {
                 name: 'Capricioza',
                 price: '250 den',
                 ingredients: ['kaskaval', 'testo', 'shunka', 'precurki', 'kecap'],
-                image: 'images/pizza.jpg'
+                image: 'images/pizza.png'
             },
             {
                 name: 'Vegetariana',
                 price: '200 den',
                 ingredients: ['kaskaval', 'testo', 'piperki', 'pomodori', 'maslina'],
-                image: 'images/pizza.jpg'
+                image: 'images/pizza.png'
             },
             {
                 name: 'Quattro Stagioni',
                 price: '270 den',
                 ingredients: ['kaskaval', 'testo', 'peperoni', 'shunka', 'piperki', 'pomodori'],
-                image: 'images/pizza.jpg'
+                image: 'images/pizza.png'
             },
             {
                 name: 'Quattro Formaggi',
                 price: '300 den',
                 ingredients: ['kaskaval', 'testo', 'gorgonzola', 'feta', 'parmezan'],
-                image: 'images/pizza.jpg'
+                image: 'images/pizza.png'
             }
         ],
         hamburgers: [
