@@ -34,7 +34,7 @@ body, .container {
 .title {
     font-size: 2.2rem;
     text-align: center;
-    margin: 2rem 0 0 0;
+    margin: 1.75rem 0 0 0;
 }
 .name {
     font-size: 1.75rem;
@@ -119,8 +119,20 @@ footer {
     border-bottom: 1px solid #363431;
 }
 .sub-title {
-    margin: 0 0 .75rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.sub-title p {
+    margin: 0 .3rem 0 0;
 }
 footer p {
     margin: .1rem;
+}
+.fa-solid {
+    color: #cb8f32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
