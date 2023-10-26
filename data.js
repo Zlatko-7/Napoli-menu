@@ -5,7 +5,7 @@ export const data = [
                 name: 'Margarita',
                 price: '210 den',
                 ingredients: ['kaskaval', 'testo', 'kecap'],
-                image: 'images/pizza.png'
+                image: './images/pizza.png'
             },
             {
                 name: 'Capricioza',
