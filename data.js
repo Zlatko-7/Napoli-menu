@@ -5,13 +5,13 @@ export const data = [
                 name: 'Margarita',
                 price: '210 den',
                 ingredients: ['kaskaval', 'testo', 'kecap'],
-                image: './images/pizza.png'
+                image: '//images/pizza.png'
             },
             {
                 name: 'Capricioza',
                 price: '250 den',
                 ingredients: ['kaskaval', 'testo', 'shunka', 'precurki', 'kecap'],
-                image: 'images/pizza2.png'
+                image: './mages/pizza2.png'
             },
             {
                 name: 'Vegetariana',
