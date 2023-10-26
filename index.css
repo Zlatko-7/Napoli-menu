@@ -12,7 +12,7 @@ body {
     margin: 1.25rem .5rem;
     max-width: 480px;
     border-radius: 5px;
-    box-shadow: 1px 1px 3px #303030;
+    box-shadow: 2px 2px 5px #303030;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,7 +24,7 @@ h1 {
     font-size: 2.2rem;
     text-align: center;
     color: #cb8f32;
-    margin: 2rem 0 1rem 0;
+    margin: 2rem 0 0 0;
     
 }
 .name {
@@ -90,7 +90,7 @@ h1 {
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 0.82;
+    opacity: 0.5;
     z-index: -1;
     background-color: #252422;
     left: -0%;
@@ -161,10 +161,20 @@ footer {
     color:  #cb8f32;
     font-size: .75rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Bubblegum Sans', sans-serif;
     background-color: #252422;
     border-top: 1px solid #363431;
     border-bottom: 1px solid #363431;
+}
+.sub-title {
+    font-family: 'Bubblegum Sans', sans-serif;
+    color: #cb8f32;
+    margin: 0 0 .75rem 0;
+
+}
+footer p {
+    margin: .1rem;
 }
