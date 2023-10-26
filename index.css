@@ -1,71 +1,70 @@
 body {
     text-align: center;
+    padding: .25rem;
+    padding: 0;
+}
+body, .price, .ingredients {
+    margin: 0;
+}
+body, .container {
     background-color: #252422;
     max-width: 480px;
-    padding: .25rem;
-    margin: 0;
-    padding: 0;
-
 }
 .container {
     padding: .6rem 1.2rem;
     margin: 1.25rem .5rem;
-    max-width: 480px;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px #303030;
+    box-shadow: 2px 2px 5px #303030; 
+}
+.container, footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
-h1 {
+.title, .name, .price, footer, .sub-title, .nav-menu {
+    color:  #cb8f32;
+}
+.price, .sub-title, footer {
+    font-family: 'Bubblegum Sans', sans-serif;
+}
+.title, .name, .ingredients, .nav-menu {
     font-family: 'Quicksand',sans-serif;
+}
+.title {
     font-size: 2.2rem;
     text-align: center;
-    color: #cb8f32;
     margin: 2rem 0 0 0;
-    
 }
 .name {
     font-size: 1.75rem;
-    font-family: 'Quicksand', sans-serif;
-    color: #cb8f32;
     margin: .5rem;
 }
 .price {
     font-size: 1.5rem;
     font-weight: 700;
-    font-family: 'Bubblegum Sans', sans-serif;
-    color:  #cb8f32;
-    margin: 0;
 }
 .ingredients {
     color: #726c6c;
     padding: .6rem;
-    font-family: 'Quicksand', sans-serif;
     max-width: 300px;
     overflow-x: auto;
     font-size: .8rem;
-    margin: 0;
 }
 .navbar {
     display: flex;
     padding: .65rem;
     overflow-x: auto;
     white-space: nowrap;
-    background-color: #252422;
-    
+    background-color: #252422;   
 }
 .nav-menu {
     padding: .65rem 1.25rem;
     flex-grow: 1;
     width: 100%;
-    font-family: 'Quicksand', sans-serif;
     background-color: #303030;
     margin: 0 .25rem;
     border-radius: 30px;
-    color:  #cb8f32;
 }
 .nav-menu:hover {
     color: #252422;
@@ -75,14 +74,12 @@ h1 {
     display: none;
 }
 .content {
-    animation: wave-animation 1s linear infinite;
+    animation: wave-animation 1s linear infinite, slide-left 2.2s;
     position: relative;
     background-image: url('images/logo1.png');
     background-size: cover;
     width: 200px;
     height: 150px;
-    border: 2px solid #363431;
-    border-radius: 2px;
     margin: 10rem auto;
     box-shadow: 1px 1px 5px #cb8f32;
 }
@@ -96,47 +93,6 @@ h1 {
     background-color: #252422;
     left: -0%;
 }
-/* .content {
-    max-width: 480px;
-    height: 100%;
-    animation: wave-animation 1s linear infinite;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-/* }
-.content::before {
-    content: 'Napoli';
-    color: #eea40f;
-    width: 100%;
-    height: 100%;
-    background-color: #252422;
-    opacity: 0.1;
-    z-index: -1;
-    font-size: 4.5rem;
-    font-weight: 700;
-    text-shadow: 3px 3px 3px #FFFFFF;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.content::after { 
-    content: 'loundge bar';
-    color:  #FFFFFF;
-    opacity: 0.6;
-    z-index: -1;
-    font-size: 1rem;
-    font-weight: 700;
-    position: fixed;
-    top: 55%;
-    left: 71.5%;
-    transform: translate(-50%, -50%);
-    border-bottom: 1px solid #eea40f;
-} */
-
 @keyframes wave-animation {
     0% {
       transform: translateY(0);
@@ -149,6 +105,14 @@ h1 {
     }
   }
 
+  @keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
   .food-img {
     width: 100%;
     height: 100%;
@@ -159,22 +123,12 @@ footer {
     height: 50px;
     margin-top: auto;
     padding: 0;
-    color:  #cb8f32;
     font-size: .75rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Bubblegum Sans', sans-serif;
-    background-color: #252422;
     border-top: 1px solid #363431;
     border-bottom: 1px solid #363431;
 }
 .sub-title {
-    font-family: 'Bubblegum Sans', sans-serif;
-    color: #cb8f32;
     margin: 0 0 .75rem 0;
-
 }
 footer p {
     margin: .1rem;
