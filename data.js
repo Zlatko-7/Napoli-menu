@@ -11,7 +11,7 @@ export const data = [
                 name: 'Capricioza',
                 price: '250 den',
                 ingredients: ['kaskaval', 'testo', 'shunka', 'precurki', 'kecap'],
-                image: './mages/pizza2.png'
+                image: './images/pizza2.png'
             },
             {
                 name: 'Vegetariana',
