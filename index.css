@@ -149,11 +149,10 @@ footer p {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #303030;
-  color: #cb8f32;
+  background-color: #cb8f32;
+  color: #252422;
   cursor: pointer;
   padding: 15px;
   border-radius: 5px;
   font-size: 18px;
-  box-shadow: 1px 1px 3px 1px #575757;
 }
