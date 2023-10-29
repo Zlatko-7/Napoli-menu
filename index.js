@@ -1,68 +1,140 @@
 import { data } from '/data.js'
 
-const pizza = document.getElementById('pizza')
-const burger = document.getElementById('burger')
-const salads = document.getElementById('salads')
-const breakfast = document.getElementById('breakfast')
-const drinks = document.getElementById('drinks')
-const alcohol = document.getElementById('alcohol')
+const content = document.getElementById('content')
 const pizzaNav = document.getElementById('pizza-nav')
 const burgerNav = document.getElementById('burger-nav')
-const content = document.getElementById('content')
+const breakfastNav = document.getElementById('breakfast-nav')
+const wrapNav = document.getElementById('wrap-nav')
+const saladsNav = document.getElementById('salads-nav')
+const appetizersNav = document.getElementById('appetizers-nav')
+const pastaNav = document.getElementById('pasta-nav')
+const meatNav = document.getElementById('meat-nav')
+const dessertNav = document.getElementById('dessert-nav')
+const drinksNav = document.getElementById('drinks-nav')
+const alcoholNav = document.getElementById('alcohol-nav')
+const topBtn = document.getElementById('top-btn')
 
+window.onscroll = () => {scrollFunction()}
 
-const hideAll = () => {
-    burger.style.display = 'none'
-    pizza.style.display = 'none'
-    salads.style.display = 'none'
-    breakfast.style.display = 'none'
-    drinks.style.display = 'none'
-    alcohol.style.display = 'none'
+const scrollFunction = () => {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
 }
 
-content ? hideAll() : render()
+topBtn.addEventListener('click', () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+})
+
+const hideContent = () => {
+    content.style.display = 'none'
+}
+const foodItems = {
+    pizza: document.getElementById('pizza'),
+    burger: document.getElementById('burger'),
+    salads: document.getElementById('salads'),
+    breakfast: document.getElementById('breakfast'),
+    drinks: document.getElementById('drinks'),
+    alcohol: document.getElementById('alcohol'),
+    wrap: document.getElementById('wrap'),
+    dessert: document.getElementById('dessert'),
+    appetizers: document.getElementById('appetizers'),
+    pasta: document.getElementById('pasta'),
+     meat: document.getElementById('meat'),
+}
+
+const hideAll = () => {
+    for (let itemName in foodItems) {
+        foodItems[itemName].style.display = 'none'
+    }
+}
 
 const renderItems = (items, container, type) => {
-    return items.map((item, index) => {
+    return items.map(item => {
+        console.log(item)
         const ingredientsSpace = item.ingredients.join(', ')
         return `<div class='container ${type}'>
                     <img class='food-img' src='${item.image}' alt="food"/>
                     <p class='name'>${item.name}</p>
                     <p class='price'>${item.price}</p>
                     <p class='ingredients'>${ingredientsSpace}</p>
-                </div>
-                `
+                </div>`
     }).join('')
 }
 
-const renderPizza = () => {
-    const pizzaData = data[0].pizzas
-    const pizzaHtml = renderItems(pizzaData, pizza, 'pizza')
-    pizza.innerHTML = pizzaHtml
+const renderFoodItems = (data, element, type) => {
+    const foodData = data[0][type]
+    const foodHtml = renderItems(foodData, foodItems[element], type)
+    foodItems[element].innerHTML = foodHtml
 }
 
-const renderBurger = () => {
-    const burgerData = data[0].hamburgers
-    const burgerHtml = renderItems(burgerData, burger, 'burger')
-    burger.innerHTML = burgerHtml
-}
-
-
-const render = () => {
-    renderPizza()
-    renderBurger()
+const showElement = (element) => {
+    hideAll()
+    foodItems[element].style.display = 'block'
 }
 
 pizzaNav.addEventListener('click', () => {
-    pizza.style.display = 'block'
-    burger.style.display = 'none'
-    content.style.display = 'none'
+    showElement('pizza')
+    hideContent()
 })
-
 burgerNav.addEventListener('click', () => {
-    burger.style.display = 'block'
-    pizza.style.display = 'none'
-    content.style.display = 'none'
+    showElement('burger')
+    hideContent()
+})
+breakfastNav.addEventListener('click', () => {
+    showElement('breakfast')
+    hideContent()
+})
+wrapNav.addEventListener('click', () => {
+    showElement('wrap')
+    hideContent()
+})
+saladsNav.addEventListener('click', () => {
+    showElement('salads')
+    hideContent()
+})
+pastaNav.addEventListener('click', () => {
+    showElement('pasta')
+    hideContent()
+})
+appetizersNav.addEventListener('click', () => {
+    showElement('appetizers')
+    hideContent()
+})
+meatNav.addEventListener('click', ()=> {
+    showElement('meat')
+    hideContent()
+})
+dessertNav.addEventListener('click', () => {
+    showElement('dessert')
+    hideContent()
+})
+drinksNav.addEventListener('click', () => {
+    showElement('drinks')
+    hideContent()
+})
+alcoholNav.addEventListener('click', () => {
+    showElement('alcohol')
+    hideContent()
 })
 
+const render = () => {
+    renderFoodItems(data, 'pizza', 'pizzas')
+    renderFoodItems(data, 'burger', 'hamburgers')
+    renderFoodItems(data, 'breakfast', 'breakfast')
+    renderFoodItems(data, 'wrap', 'wraps')
+    renderFoodItems(data, 'salads', 'salads')
+    renderFoodItems(data, 'pasta', 'pasta')
+    renderFoodItems(data, 'appetizers', 'appetizers')
+    renderFoodItems(data, 'meat', 'meat')
+    renderFoodItems(data, 'dessert', 'dessert')
+    renderFoodItems(data, 'drinks', 'drinks')
+    renderFoodItems(data, 'alcohol', 'alcohol')
+}
+
+
+content ? hideAll() : hideContent()
 render()

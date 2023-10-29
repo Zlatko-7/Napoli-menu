@@ -2,195 +2,394 @@ export const data = [
     { 
         pizzas: [
             { 
-                name: 'Margarita',
+                name: 'Solenka',
                 price: '210 den',
-                ingredients: ['kaskaval', 'testo', 'kecap'],
+                ingredients: ['pelate', 'edamer', 'mozzarella', 'sesame'],
                 image: './images/pizza.png'
             },
             {
-                name: 'Capricioza',
+                name: 'Margarita',
                 price: '250 den',
-                ingredients: ['kaskaval', 'testo', 'shunka', 'precurki', 'kecap'],
+                ingredients: ['pelate', 'edamer', 'mozzarella'],
                 image: './images/pizza2.png'
             },
             {
-                name: 'Vegetariana',
+                name: 'Capricciosa',
                 price: '200 den',
-                ingredients: ['kaskaval', 'testo', 'piperki', 'pomodori', 'maslina'],
+                ingredients: ['pelate', 'edamer', 'mozzarella', 'chicken fillet', 'mushrooms'],
                 image: './images/pizza.png'
             },
             {
-                name: 'Quattro Stagioni',
+                name: 'Oriental',
                 price: '270 den',
-                ingredients: ['kaskaval', 'testo', 'peperoni', 'shunka', 'piperki', 'pomodori'],
+                ingredients: ['pelate', 'edamer', 'mozzarella', 'sujuk', 'beef meat', 'mushrooms'],
                 image: './images/pizza2.png'
             },
             {
                 name: 'Quattro Formaggi',
                 price: '300 den',
-                ingredients: ['kaskaval', 'testo', 'gorgonzola', 'feta', 'parmezan'],
+                ingredients: ['edamer', 'mozzarella', 'gorgonzola', 'parmesan',],
+                image: './images/pizza.png'
+            },
+            {
+                name: 'Bianca',
+                price: '270 den',
+                ingredients: ['edamer','mozzarella', 'white cream', 'eggs', 'sujuk'],
+                image: './images/pizza2.png'
+            },
+            {
+                name: 'Tuna',
+                price: '300 den',
+                ingredients: ['pelate', 'edamer', 'mozzarella', 'tuna', 'onion', 'olives'],
+                image: './images/pizza.png'
+            },
+            {
+                name: 'Napoli Pastarmajlia',
+                price: '300 den',
+                ingredients: ['marinated chicken', 'edamer', 'mozzarella', 'pepperoni',],
                 image: './images/pizza.png'
             }
+
         ],
         hamburgers: [
-            {
-                name: 'Cheeseburger',
-                price: '180 den',
-                ingredients: ['lepinja', 'mlako meso', 'cheddar sir', 'zelenchuk'],
-                image: './images/pizza2.png'
-            },
-            {
-                name: 'Bacon Burger',
-                price: '220 den',
-                ingredients: ['lepinja', 'mlako meso', 'cheddar sir', 'pekmez', 'zelenchuk'],
-                image: './images/pizza2.png'
-            },
-            {
-                name: 'Mushroom Burger',
-                price: '200 den',
-                ingredients: ['lepinja', 'mlako meso', 'cheddar sir', 'pecurki', 'zelenchuk'],
-                image: './images/pizza2.png'
-            },
-            {
-                name: 'Chicken Burger',
-                price: '190 den',
-                ingredients: ['lepinja', 'pileshko meso', 'majonez', 'zelena salata'],
-                image: './images/pizza2.png'
-            },
-            {
-                name: 'Veggie Burger',
+            { 
+                name: 'Sandwich',
                 price: '210 den',
-                ingredients: ['lepinja', 'zelenchuk', 'humus', 'avokado'],
-                image: './images/pizza2.png'
+                ingredients: ['sauce', 'lettuce', 'tomato', 'yellow cheese', 'chicken fillet'],
+                image: ''
+            },
+            {
+                name: 'Club Sandwich',
+                price: '250 den',
+                ingredients: ['sauce', 'lettuce', 'tomato', 'yellow cheese', 'chicken fillet', 'french fries'],
+                image: ''
+            },
+            {
+                name: 'Savoury Crepes',
+                price: '200 den',
+                ingredients: ['yellow cheese', 'chicken fillet', 'greek cream', 'french fries'],
+                image: ''
+            },
+            {
+                name: 'Crispy Chicken',
+                price: '270 den',
+                ingredients: ['chicken steak', 'curry sauce', 'lettuce', 'french fries'],
+                image: ''
+            },
+            {
+                name: 'Chicken Quesadilla',
+                price: '270 den',
+                ingredients: ['tortilla', 'chicken steak', 'yellow cheese', 'mozzarella', 'cheddar','french fries','sauce'],
+                image: ''
             }
+            ,
+            {
+                name: 'Crispy Chicken',
+                price: '270 den',
+                ingredients: ['chicken steak', 'curry sauce', 'lettuce', 'french fries'],
+                image: ''
+            },
+            {
+                name: 'Hamburger',
+                price: '300 den',
+                ingredients: ['beef meat 130gr', 'salad', 'french fries', 'sauce'],
+                image: ''
+            },
+            {
+                name: 'Napoli Premium Burger',
+                price: '270 den',
+                ingredients: ['black bread', 'beef meat 220gr', 'mix green salad', 'tomato', 'onion', 'melted cheddar', 'french fries', 'premium sauce'],
+                image: ''
+            },
         ],
         drinks: [
+            { 
+                name: 'Coca Cola',
+                price: '210 den',
+                ingredients: [],
+                image: ''
+            },
             {
-                name: 'Coca-Cola',
-                price: '70 den',
-                size: '0.33L',
-                image: './images/pizza2.png'
+                name: 'Voda',
+                price: '250 den',
+                ingredients: [],
+                image: ''
             },
             {
                 name: 'Fanta',
-                price: '70 den',
-                size: '0.33L',
-                image: './images/pizza2.png'
+                price: '200 den',
+                ingredients: [],
+                image: ''
             },
             {
-                name: 'Sprite',
-                price: '70 den',
-                size: '0.33L',
-                image: './images/pizza2.png'
+                name: 'Tea',
+                price: '270 den',
+                ingredients: [],
+                image: ''
             },
             {
-                name: 'Lemonade',
-                price: '80 den',
-                size: '0.5L',
-                image: './images/pizza2.png'
+                name: 'Espresso',
+                price: '300 den',
+                ingredients: [],
+                image: ''
             },
-            {
-                name: 'Iced Tea',
-                price: '90 den',
-                size: '0.5L',
-                image: './images/pizza2.png'
-            }
         ],
         alcohol: [
-            {
-                name: 'Red Wine',
-                price: '300 den',
-                type: '750ml',
-                image: './images/pizza2.png'
-            },
-            {
-                name: 'White Wine',
-                price: '280 den',
-                type: '750ml',
-                image: './images/pizza2.png'
-            },
-            {
-                name: 'Beer',
-                price: '150 den',
-                type: '500ml',
-                image: './images/pizza2.png'
-            },
-            {
-                name: 'Whiskey',
-                price: '500 den',
-                type: '50ml',
-                image: './images/pizza2.png'
+            { 
+                name: 'Skopsko',
+                price: '210 den',
+                ingredients: [],
+                image: ''
             },
             {
                 name: 'Vodka',
-                price: '400 den',
-                type: '500ml',
-                image: './images/pizza2.png'
-            }
+                price: '250 den',
+                ingredients: [],
+                image: ''
+            },
+            {
+                name: 'Pelinkovac',
+                price: '200 den',
+                ingredients: [],
+                image: ''
+            },
+            {
+                name: 'Whisky',
+                price: '270 den',
+                ingredients: [],
+                image: ''
+            },
+            {
+                name: 'Wine',
+                price: '300 den',
+                ingredients: [],
+                image: ''
+            },
         ],
         breakfast: [
-            {
-                name: 'Omelette',
-                price: '180 den',
-                ingredients: ['eggs', 'mushrooms', 'cheese', 'tomatoes'],
-                image: './images/pizza2.png'
-            },
-            {
-                name: 'Pancakes',
-                price: '150 den',
-                ingredients: ['flour', 'milk', 'eggs', 'butter', 'syrup'],
-                image: './images/pizza2.png'
-            },
-            {
-                name: 'Fruit Salad',
+            { 
+                name: 'Omlett With Cheese',
                 price: '200 den',
-                ingredients: ['strawberries', 'blueberries', 'bananas', 'apples', 'honey'],
-                image: './images/pizza2.png'
+                ingredients: ['3 eggs', 'cheese', 'bread', 'salad'],
+                image: ''
             },
             {
-                name: 'Croissant',
-                price: '100 den',
-                ingredients: ['flour', 'butter', 'sugar'],
-                image: './images/pizza2.png'
+                name: 'Omlett With Yellow Cheese Chicken',
+                price: '250 den',
+                ingredients: ['3 eggs', 'yellow cheese', 'chicken', 'bread', 'salad'],
+                image: ''
             },
             {
-                name: 'Yogurt Parfait',
-                price: '220 den',
-                ingredients: ['yogurt', 'granola', 'mixed berries', 'honey'],
-                image: './images/pizza2.png'
-            }
+                name: 'Omlett With Yellow Cheese Sujuk and Beef',
+                price: '200 den',
+                ingredients: ['3 eggs', 'yellow cheese', 'bread', 'sujuk', 'beef', 'salad'],
+                image: ''
+            },
+            {
+                name: 'Breakfast Eggs 1',
+                price: '270 den',
+                ingredients: ['3 eggs', 'cheese', 'bread', 'sald'],
+                image: ''
+            },
+            {
+                name: 'Breakfast Eggs 2',
+                price: '300 den',
+                ingredients: ['3 eggs', 'cheese', 'bread', 'sald', 'beef'],
+                image: ''
+            },
+            {
+                name: 'English Breakfast',
+                price: '300 den',
+                ingredients: ['2 eggs', '2 sausage', 'bread', 'sald', 'mustard sauce'],
+                image: ''
+            },
+            {
+                name: 'Italian Breakfast',
+                price: '300 den',
+                ingredients: ['2 eggs', 'parmesan', 'bread', 'blue cheese',],
+                image: ''
+            },
+            {
+                name: 'Traditional Breakfast',
+                price: '300 den',
+                ingredients: ['mekica', 'cheese', 'ajvar', 'olives'],
+                image: ''
+            },
         ],
         salads: [
-            {
-                name: 'Caesar Salad',
-                price: '220 den',
-                ingredients: ['romaine lettuce', 'croutons', 'parmesan', 'chicken', 'Caesar dressing'],
-                image: './images/pizza2.png'
+            { 
+                name: 'Tuna Salad',
+                price: '210 den',
+                ingredients: ['tuna', 'lettuce', 'tomato', 'cucumber', 'corn', 'onion', 'olives'],
+                image: ''
             },
             {
-                name: 'Greek Salad',
-                price: '200 den',
-                ingredients: ['cucumbers', 'tomatoes', 'red onion', 'olives', 'feta cheese', 'olive oil'],
-                image: './images/pizza2.png'
-            },
-            {
-                name: 'Cobb Salad',
+                name: 'Caesar',
                 price: '250 den',
-                ingredients: ['avocado', 'bacon', 'chicken', 'eggs', 'tomatoes', 'blue cheese', 'vinaigrette'],
-                image: './images/pizza2.png'
+                ingredients: ['lettuce','tomato','kubeti', 'chicken', 'parmesan', 'dressing'],
+                image: ''
             },
             {
-                name: 'Caprese Salad',
-                price: '240 den',
-                ingredients: ['mozzarella', 'tomatoes', 'basil', 'balsamic glaze'],
-                image: './images/pizza2.png'
+                name: 'Carpaccio',
+                price: '200 den',
+                ingredients: ['mix green salad', 'cherry tomatos', 'parmesan', 'avocado', 'dressing'],
+                image: ''
             },
             {
-                name: 'Waldorf Salad',
-                price: '230 den',
-                ingredients: ['apples', 'celery', 'walnuts', 'grapes', 'mayonnaise'],
-                image: './images/pizza2.png'
+                name: 'Italiana',
+                price: '270 den',
+                ingredients: ['lettuce', 'mix green salad', 'mozzarella', 'beef', 'dressin'],
+                image: ''
+            },
+            {
+                name: 'Caprese',
+                price: '300 den',
+                ingredients: ['tomato', 'mozzarella', 'arugula', 'balsamico cream'],
+                image: ''
+            },
+            {
+                name: 'Greek',
+                price: '300 den',
+                ingredients: ['tomato', 'cheese', 'cucumber', 'olives', 'onion', 'biscotti'],
+                image: ''
+            },
+        ],
+        wraps: [
+            { 
+                name: 'Chicken Wrap',
+                price: '210 den',
+                ingredients: ['tortilla', 'tzatziki', 'chicken', 'tomato', 'cucumber', 'corn', 'ketchup', 'curry sauce', 'franch fries'],
+                image: ''
+            },
+            {
+                name: 'Pomodori',
+                price: '250 den',
+                ingredients: ['tortilla','chicken', 'pelate', 'yellow cheese', 'french fries'],
+                image: ''
+            },
+            {
+                name: 'Ala Napoli',
+                price: '200 den',
+                ingredients: ['tortilla','chicken', 'white cream', 'yellow cheese', 'beef meat','sauce','french fries'],
+                image: ''
+            },
+        ],
+        meat: [
+            { 
+                name: 'Chicken With Curry',
+                price: '210 den',
+                ingredients: ['chicken', 'white cream','curry', 'french fries', 'bread'],
+                image: ''
+            },
+            {
+                name: 'Chicken With Cheddar',
+                price: '250 den',
+                ingredients: ['chicken', 'white cream' ,'cheddar cheese', 'french fries', 'bread',],
+                image: ''
+            },
+            {
+                name: 'Chicken With Mushrooms',
+                price: '200 den',
+                ingredients: ['chicken', 'white cream', 'mushrooms', 'french fries', 'bread'],
+                image: ''
+            },
+            {
+                name: 'Chicken With Gorgonzola',
+                price: '270 den',
+                ingredients: ['chicken', 'gorogonzola', 'white cream', 'french fries', 'bread',],
+                image: ''
+            },
+            {
+                name: 'Classic Chicken Steak',
+                price: '300 den',
+                ingredients: ['chicken', 'salad', 'french fries', 'bread',],
+                image: ''
+            },
+            {
+                name: 'Sharska',
+                price: '300 den',
+                ingredients: ['beef meat 280gr', 'french fries', 'salad','bread',],
+                image: ''
             }
+        ],
+        dessert: [
+            { 
+                name: 'Crepe',
+                price: '210 den',
+                ingredients: ['nutella', 'bananna', 'plazma'],
+                image: ''
+            }
+            ,
+        ],
+        pasta: [
+            { 
+                name: 'Penne Napolitana',
+                price: '210 den',
+                ingredients: ['pelate', 'parmesan'],
+                image: ''
+            },
+            {
+                name: 'Penne Arrabbiata',
+                price: '250 den',
+                ingredients: ['pelate', 'chilly', 'parmesan'],
+                image: ''
+            },
+            {
+                name: 'Penne Aglio e Olio',
+                price: '200 den',
+                ingredients: ['olive oil', 'garlic', 'olives','parmesan'],
+                image: ''
+            },
+            {
+                name: 'Penne Chicken',
+                price: '270 den',
+                ingredients: ['chicken', 'white cream', 'parmesan'],
+                image: ''
+            },
+            {
+                name: 'Penne Alfredo',
+                price: '300 den',
+                ingredients: ['chicken', 'white cream', 'pepper', 'nut meg', 'parmesan'],
+                image: ''
+            },
+        ],
+        appetizers: [
+            { 
+                name: 'Chicken Fingers',
+                price: '210 den',
+                ingredients: ['300gr chicken steak', 'mustard/honey', 'tartar sauce'],
+                image: ''
+            },
+            {
+                name: 'French Fries',
+                price: '250 den',
+                ingredients: ['300gr fries', 'sauce',],
+                image: ''
+            },
+            {
+                name: 'Bruschette',
+                price: '200 den',
+                ingredients: ['pelati', 'garlic', 'mozzarella', 'basil',],
+                image: ''
+            },
+            {
+                name: 'Melted Cheese',
+                price: '270 den',
+                ingredients: ['pelati', 'feta cheese', 'premium cheese', 'bread'],
+                image: ''
+            },
+            {
+                name: 'Cold Appetizers',
+                price: '300 den',
+                ingredients: ['optional cheese/meat'],
+                image: ''
+            },
+            {
+                name: 'x2 Piroshka',
+                price: '300 den',
+                ingredients: ['chicken', 'yellow cheese', 'french fries', 'sauce'],
+                image: ''
+            },
         ]
     }
 ];
