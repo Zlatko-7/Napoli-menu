@@ -10,8 +10,6 @@ const appetizersNav = document.getElementById('appetizers-nav')
 const pastaNav = document.getElementById('pasta-nav')
 const meatNav = document.getElementById('meat-nav')
 const dessertNav = document.getElementById('dessert-nav')
-const drinksNav = document.getElementById('drinks-nav')
-const alcoholNav = document.getElementById('alcohol-nav')
 const topBtn = document.getElementById('top-btn')
 
 window.onscroll = () => {scrollFunction()}
@@ -37,13 +35,11 @@ const foodItems = {
     burger: document.getElementById('burger'),
     salads: document.getElementById('salads'),
     breakfast: document.getElementById('breakfast'),
-    drinks: document.getElementById('drinks'),
-    alcohol: document.getElementById('alcohol'),
     wrap: document.getElementById('wrap'),
     dessert: document.getElementById('dessert'),
     appetizers: document.getElementById('appetizers'),
     pasta: document.getElementById('pasta'),
-     meat: document.getElementById('meat'),
+    meat: document.getElementById('meat'),
 }
 
 const hideAll = () => {
@@ -54,7 +50,6 @@ const hideAll = () => {
 
 const renderItems = (items, container, type) => {
     return items.map(item => {
-        console.log(item)
         const ingredientsSpace = item.ingredients.join(', ')
         return `<div class='container ${type}'>
                     <img class='food-img' src='${item.image}' alt="food"/>
@@ -112,14 +107,6 @@ dessertNav.addEventListener('click', () => {
     showElement('dessert')
     hideContent()
 })
-drinksNav.addEventListener('click', () => {
-    showElement('drinks')
-    hideContent()
-})
-alcoholNav.addEventListener('click', () => {
-    showElement('alcohol')
-    hideContent()
-})
 
 const render = () => {
     renderFoodItems(data, 'pizza', 'pizzas')
@@ -131,8 +118,6 @@ const render = () => {
     renderFoodItems(data, 'appetizers', 'appetizers')
     renderFoodItems(data, 'meat', 'meat')
     renderFoodItems(data, 'dessert', 'dessert')
-    renderFoodItems(data, 'drinks', 'drinks')
-    renderFoodItems(data, 'alcohol', 'alcohol')
 }
 
 
